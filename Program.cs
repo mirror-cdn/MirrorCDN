@@ -26,6 +26,7 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 builder.Services.AddBootstrapBlazor();
 builder.Services.AddBlazoredLocalStorage();
 builder.Services.AddBlazoredSessionStorage();
+
 await builder.Build().RunAsync();
 
 public static class Ext

@@ -862,3 +862,6 @@ D:\.NET_Web\MirrorCDN\bin\Debug\net6.0\Blazored.LocalStorage.dll
 D:\.NET_Web\MirrorCDN\bin\Debug\net6.0\Blazored.SessionStorage.dll
 D:\.NET_Web\MirrorCDN\obj\Debug\net6.0\build-gz\gKxi4fA0.gz
 D:\.NET_Web\MirrorCDN\obj\Debug\net6.0\build-gz\ZCKqIQRW.gz
+D:\.NET_Web\MirrorCDN\bin\Debug\net6.0\wwwroot\.gitattributes
+D:\.NET_Web\MirrorCDN\bin\Debug\net6.0\wwwroot\.nojekyll
+D:\.NET_Web\MirrorCDN\bin\Debug\net6.0\wwwroot\404.html
