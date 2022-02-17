@@ -1,0 +1,1 @@
+D:\.NET_Web\MirrorCDN\obj\Release\net6.0\browser-wasm\PubTmp\Out\web.config

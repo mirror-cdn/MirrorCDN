@@ -1,0 +1,15 @@
+﻿<BootstrapBlazorRoot>
+    <Router AppAssembly="@typeof(App).Assembly">
+        <Found Context="routeData">
+            <PageTitle>MirrorCDN</PageTitle>
+            <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+            <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+        </Found>
+        <NotFound>
+            <PageTitle>404哦</PageTitle>
+            <LayoutView Layout="@typeof(MainLayout)">
+                <p>正在玩命开发中 ...</p>
+            </LayoutView>
+        </NotFound>
+    </Router>
+</BootstrapBlazorRoot>

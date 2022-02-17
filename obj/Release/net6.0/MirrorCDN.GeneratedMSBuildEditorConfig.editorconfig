@@ -1,0 +1,43 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = MirrorCDN
+build_property.RootNamespace = MirrorCDN
+build_property.ProjectDir = D:\.NET_Web\MirrorCDN\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\.NET_Web\MirrorCDN
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/.NET_Web/MirrorCDN/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/.NET_Web/MirrorCDN/Captchas.razor]
+build_metadata.AdditionalFiles.TargetPath = Q2FwdGNoYXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/.NET_Web/MirrorCDN/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = SW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/.NET_Web/MirrorCDN/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/.NET_Web/MirrorCDN/Make.razor]
+build_metadata.AdditionalFiles.TargetPath = TWFrZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/.NET_Web/MirrorCDN/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

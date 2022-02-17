@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\19138\.nuget\packages\;C:\Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.1.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\19138\.nuget\packages\" />
+    <SourceRoot Include="C:\Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)bootstrapblazor\6.3.1\contentFiles\any\net6.0\wwwroot\css\bootstrap.blazor.bundle.min.css" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor\6.3.1\contentFiles\any\net6.0\wwwroot\css\bootstrap.blazor.bundle.min.css')">
+      <NuGetPackageId>BootstrapBlazor</NuGetPackageId>
+      <NuGetPackageVersion>6.3.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap.blazor.bundle.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrapblazor\6.3.1\contentFiles\any\net6.0\wwwroot\css\motronic.min.css" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor\6.3.1\contentFiles\any\net6.0\wwwroot\css\motronic.min.css')">
+      <NuGetPackageId>BootstrapBlazor</NuGetPackageId>
+      <NuGetPackageVersion>6.3.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\motronic.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrapblazor\6.3.1\contentFiles\any\net6.0\wwwroot\js\bootstrap.blazor.bundle.min.js" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor\6.3.1\contentFiles\any\net6.0\wwwroot\js\bootstrap.blazor.bundle.min.js')">
+      <NuGetPackageId>BootstrapBlazor</NuGetPackageId>
+      <NuGetPackageVersion>6.3.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\bootstrap.blazor.bundle.min.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrapblazor\6.3.1\contentFiles\any\net6.0\wwwroot\lib\summernote\font\summernote.eot" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor\6.3.1\contentFiles\any\net6.0\wwwroot\lib\summernote\font\summernote.eot')">
+      <NuGetPackageId>BootstrapBlazor</NuGetPackageId>
+      <NuGetPackageVersion>6.3.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\lib\summernote\font\summernote.eot</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrapblazor\6.3.1\contentFiles\any\net6.0\wwwroot\lib\summernote\font\summernote.ttf" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor\6.3.1\contentFiles\any\net6.0\wwwroot\lib\summernote\font\summernote.ttf')">
+      <NuGetPackageId>BootstrapBlazor</NuGetPackageId>
+      <NuGetPackageVersion>6.3.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\lib\summernote\font\summernote.ttf</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrapblazor\6.3.1\contentFiles\any\net6.0\wwwroot\lib\summernote\font\summernote.woff" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor\6.3.1\contentFiles\any\net6.0\wwwroot\lib\summernote\font\summernote.woff')">
+      <NuGetPackageId>BootstrapBlazor</NuGetPackageId>
+      <NuGetPackageVersion>6.3.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\lib\summernote\font\summernote.woff</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrapblazor\6.3.1\contentFiles\any\net6.0\wwwroot\lib\summernote\font\summernote.woff2" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor\6.3.1\contentFiles\any\net6.0\wwwroot\lib\summernote\font\summernote.woff2')">
+      <NuGetPackageId>BootstrapBlazor</NuGetPackageId>
+      <NuGetPackageVersion>6.3.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\lib\summernote\font\summernote.woff2</Link>
+    </Content>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly\6.0.2\build\net6.0\Microsoft.AspNetCore.Components.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly\6.0.2\build\net6.0\Microsoft.AspNetCore.Components.WebAssembly.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor\6.3.1\buildTransitive\BootstrapBlazor.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor\6.3.1\buildTransitive\BootstrapBlazor.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_AspNetCore_Components_WebAssembly_DevServer Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_DevServer)' == '' ">C:\Users\19138\.nuget\packages\microsoft.aspnetcore.components.webassembly.devserver\6.0.2</PkgMicrosoft_AspNetCore_Components_WebAssembly_DevServer>
+  </PropertyGroup>
+</Project>

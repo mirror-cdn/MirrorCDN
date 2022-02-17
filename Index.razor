@@ -1,0 +1,39 @@
+﻿@page "/api"
+
+@inject NavigationManager navigationManager
+
+@inject ILocalStorageService LocalStorageService
+@inject ISyncLocalStorageService SyncLocalStorageService
+
+@inject ISessionStorageService SessionStorageService
+
+@code{
+
+    [Parameter]
+    public string? Url { get; set; }
+
+    private string DecryptURL { get; set; } = "";
+    protected override async void OnInitialized()
+    { 
+        if (string.IsNullOrEmpty(Url))
+        {
+            this.Url = navigationManager.QueryString("Url");
+        }
+        var token = await LocalStorageService.GetItemAsStringAsync("DeadlineDate");
+        if (string.IsNullOrEmpty(token))
+        {
+            navigationManager.NavigateTo("/Captchas?Url="+Url,true);
+        }
+        if (DateTime.Parse(token)>=DateTime.Now) 
+        {
+            DecryptURL = Ext.GzipToString(HttpUtility.UrlDecode(Url)); 
+            navigationManager.NavigateTo(DecryptURL, true); 
+        }
+        else
+        {
+            navigationManager.NavigateTo("/Captchas?Url="+Url,true);
+        }
+        base.OnInitialized();
+    }
+   
+}

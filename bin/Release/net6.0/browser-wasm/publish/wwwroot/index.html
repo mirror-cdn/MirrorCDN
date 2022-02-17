@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>MirrorCDN</title>
+    <base href="/" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="MirrorCDN.styles.css" rel="stylesheet" />
+
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="_content/BootstrapBlazor/css/bootstrap.blazor.bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="_content/BootstrapBlazor/css/motronic.min.css">
+</head>
+
+<body>
+    <div id="app"><center><h3 style="color:deeppink">应用程序正在加载</h3></center></div>
+
+    <div id="blazor-error-ui">
+        引发了一个未知的错误，请尝试刷新本页面。
+        <a href="" class="reload">刷新</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script>
+        (function (l) {
+            if (l.search) {
+                var q = {};
+                l.search.slice(1).split('&').forEach(function (v) {
+                    var a = v.split('=');
+                    q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+                });
+                if (q.p !== undefined) {
+                    window.history.replaceState(null, null,
+                        l.pathname.slice(0, -1) + (q.p || '') +
+                        (q.q ? ('?' + q.q) : '') +
+                        l.hash
+                    );
+                }
+            }
+        }(window.location))
+    </script>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="_content/BootstrapBlazor/js/bootstrap.blazor.bundle.min.js"></script>
+
+</body>
+
+</html>

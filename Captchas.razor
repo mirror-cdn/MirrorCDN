@@ -1,0 +1,60 @@
+﻿@page "/Captchas"
+@inject NavigationManager navigationManager
+
+@inject ILocalStorageService LocalStorageService
+@inject ISyncLocalStorageService SyncLocalStorageService
+
+@inject ISessionStorageService SessionStorageService
+
+<center>
+    <Captcha GetImageName="@GetImage" @ref="Captcha" OnValid="@OnValid" />
+</center>
+
+@code{
+    [Parameter]
+    public string Url { get; set; } = "";
+
+    private Captcha? Captcha { get; set; }
+    protected override async void OnInitialized()
+    {
+        if (string.IsNullOrEmpty(Url))
+        {
+            this.Url = navigationManager.QueryString("Url");
+        }
+        var token = await LocalStorageService.GetItemAsStringAsync("DeadlineDate");
+        if (string.IsNullOrEmpty(token)==false)
+        {
+            if (DateTime.Parse(token)>=DateTime.Now) 
+            {
+                navigationManager.NavigateTo("/api?Url="+Url,true);
+            }
+        }
+        base.OnInitialized();
+    }
+    private void OnValid(bool ret)
+    {       
+        if (ret)
+        {
+            Task.Run( async () =>
+            {
+                
+                var DateNow = DateTime.Now;
+                var newDate = DateNow.AddMinutes(30);
+                await LocalStorageService.SetItemAsStringAsync("DeadlineDate",newDate.ToString());
+                navigationManager.NavigateTo("/api?Url="+Url,true);
+                Captcha?.Reset();
+            });
+        }
+        else
+        {
+            if (Captcha != null)
+            {
+                Captcha.Reset();
+            }           
+        }
+    }
+    private string GetImage()
+    {
+        return "icon-192.png";
+    } 
+}
