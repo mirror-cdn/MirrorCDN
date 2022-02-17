@@ -41,7 +41,7 @@
                 var DateNow = DateTime.Now;
                 var newDate = DateNow.AddMinutes(30);
                 await LocalStorageService.SetItemAsStringAsync("DeadlineDate",newDate.ToString());
-                navigationManager.NavigateTo("/api?Url="+HttpUtility.UrlEncode(Url),true);
+                navigationManager.NavigateTo("/api?Url="+Url,true);
             });
         }
         else

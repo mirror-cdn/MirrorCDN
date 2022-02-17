@@ -209,13 +209,13 @@
       "mscorlib.dll": "sha256-YJUbvBrZviUDlirANhqo3YO+JJV5zvpz+1YjpQt40AY=",
       "netstandard.dll": "sha256-uK\/gnL5QiPz41USQQlOjy+dP6kKSc5LSw3+1C5CY0Hg=",
       "System.Private.CoreLib.dll": "sha256-iDGm3IE442avFcvHDV3nUsROZhztE5axoFKedF2+Ofo=",
-      "MirrorCDN.dll": "sha256-q7GpGvfHnZunDuKvpN6Xgr3sx8DNKIy+E7xSlw47xvk="
+      "MirrorCDN.dll": "sha256-yqjrwbwgLqivBBsixw6C80mBxCS1Q8tf7WxrXR6AOMc="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "MirrorCDN.pdb": "sha256-EbE+HUO1n2Lg1oKclFabrtL550ZT8a47vpXMBoCZOno="
+      "MirrorCDN.pdb": "sha256-8q43eKlhbx16o60ERNbpjWBkU3\/RtTaehCLw8QHw+Ek="
     },
     "runtime": {
       "dotnet.6.0.2-mauipre.1.22102.15.kf8l5pkaed.js": "sha256-gW2Ru0QyAhkIJ9mHG+iFjCapHEW\/YukPTP0y54eMKUQ=",

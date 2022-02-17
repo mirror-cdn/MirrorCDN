@@ -80,7 +80,7 @@ public static class Ext
         {
             byte[] rawData = System.Text.Encoding.UTF8.GetBytes(rawString.ToString());
             byte[] zippedData = Compress(rawData);
-            return (string)(Convert.ToBase64String(zippedData));
+            return (string)(Convert.ToBase64String(zippedData).Replace("/","-"));
         }
     }
 
@@ -106,7 +106,7 @@ public static class Ext
     public static string GzipToString(string Value)
     {
         //DataSet ds = new DataSet();
-        string CC = GZipDecompressString(Value);
+        string CC = GZipDecompressString(Value.Replace("-", "/"));
         //System.IO.StringReader Sr = new System.IO.StringReader(CC);
         //ds.ReadXml(Sr);
         return CC;
@@ -152,10 +152,6 @@ public static class Ext
 
     }
 
-    public static void SetCookice()
-    {
-      
-
-    }
+   
 
 } 
