@@ -1,15 +1,18 @@
 ﻿@page "/make"
+@page "/"
 @inject NavigationManager navigationManager
-<h1>链接伪装(头部请保留http/https)</h1>
+<h1>链接伪装(头部请保留http://或https:// ， ...其实私有协议也是可以的)</h1>
 <center>
 <br />
 源链接：
-<input @bind-value=@InputUrl style="width:50%;margin:5px" />
+<input @bind-value=@InputUrl style="width:70%;margin:8px" />
 <br />
 加密后：
-<input @bind-value=@OutputUrl style="width:50%;margin:5px" />
+<input @bind-value=@OutputUrl style="width:70%;margin:8px" />
 <br />
-<Button OnClick="@CreateUrl" Text="生成" Color="Color.Primary" />
+<Button OnClick="@CreateUrl" Text="生成链接" Color="Color.Primary" />
+<br />
+
 </center>
 @code{
     [Parameter]
