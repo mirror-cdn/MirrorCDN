@@ -15,11 +15,27 @@
 </head>
 
 <body>
-    <div id="app"><center><h3 style="color:deeppink">应用程序正在加载</h3></center></div>
+    <div id="app" style="padding:24px;margin:12px">
+        <center>
+            
+            <h3 style="color:deeppink">应用程序正在加载</h3>
+            <div style="padding:10px;margin:5px">
+                1.无加速器初次加载需要1~2分钟，有加速器秒开，因为网站在Github上。
+                <br />
+                2.加载一次后在不清除浏览器缓存的情况下也可以秒开，基本上浏览器不会自己清除缓存。
+                <br />
+                3.网站根目录没东西，制作Url请访问我→<a href="https://mirror-cdn.github.io/make">[制作带人机验证编码的URL]</a>
+                <br />
+                4.人机验证后，通过该验证的浏览器，包括应用程序内的浏览器，会被分发临时身份ID，有效期30分钟，再次进入将会再次人机验证。
+                <br />
+                5.本项目网站被列入黑名单时，请自己fork仓库代码，或者下载源代码（都在这个组织的仓库里：mirror-cdn），自己用自己的账户免费开通Github Pages静态网站托管服务，自己搭建本项目。
+            </div>
+        </center>
+    </div>
 
     <div id="blazor-error-ui">
-        引发了一个未知的错误，请尝试刷新本页面。
-        <a href="" class="reload">刷新</a>
+        引发了一个未知的错误，请尝试刷新本页面。(没有实际问题请忽略)
+        <a href="" class="reload">刷新页面</a>
         <a class="dismiss">🗙</a>
     </div>
     <script>
